@@ -1,9 +1,21 @@
 # ask the user what is distance in ft
 
-# find a way to store users answers
-distance = input('What is the distance in feet: ')
-#print answer after user response not during
-num_converter ={
-    '12': '3.6576 m'
+import random
+
+num_converter = {
+    'ft': 3.6576,
 }
-print(f"12 ft is {num_converter.get(distance)}")
+
+#need to get info from user
+
+user_input = input('Enter number of feet: ')
+
+#recieves user input as a string
+
+user_input = int(user_input)
+
+#converts user input into a integer
+
+print(f"The conversion for {user_input}ft into meters is {user_input * num_converter['ft']}m.")
+
+#print conversion / do calculations inside of the print statement
